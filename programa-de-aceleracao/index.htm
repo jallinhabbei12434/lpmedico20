@@ -1,0 +1,1013 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.3",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseenter","mouseout","mouseleave","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input","visibilitychange"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),this.F("domReady"),await this.T(),await this.j(),await this.I(),this.F("windowLoad"),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise((t=>setTimeout(t,500-Date.now()+this.lastTouchEnd))),this.H(),this.F("all"),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))}),{isRocket:!0})}o(){window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0}),{isRocket:!0}),window.addEventListener("pagehide",(()=>{this.onFirstUserAction=null}),{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",(function i(o){Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1})),event.preventDefault(),window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}))}),{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),this.savedUserEvents.length>0&&(t.stopPropagation(),t.stopImmediatePropagation()),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach((t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})))}U(){this.userEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0}))),this.savedUserEvents.forEach((t=>{t.target.dispatchEvent(new window[t.constructor.name](t.type,t))}))}m(){this.eventsMutationObserver=new MutationObserver((t=>{const e="return false";for(const i of t){if("attributes"===i.type){const t=i.target.getAttribute(i.attributeName);t&&t!==e&&(i.target.setAttribute("data-rocket-"+i.attributeName,t),i.target["rocket"+i.attributeName]=new Function("event",t),i.target.setAttribute(i.attributeName,e))}"childList"===i.type&&i.addedNodes.forEach((t=>{if(t.nodeType===Node.ELEMENT_NODE)for(const i of t.attributes)this.attributeEvents.includes(i.name)&&i.value&&""!==i.value&&(t.setAttribute("data-rocket-"+i.name,i.value),t["rocket"+i.name]=new Function("event",i.value),t.setAttribute(i.name,e))}))}})),this.eventsMutationObserver.observe(document,{subtree:!0,childList:!0,attributeFilter:this.attributeEvents})}H(){this.eventsMutationObserver.disconnect(),this.attributeEvents.forEach((t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach((e=>{e.setAttribute(t,e.getAttribute("data-rocket-"+t)),e.removeAttribute("data-rocket-"+t)}))}))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o})},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}F(t){"all"===t&&(EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener),this.savedEventListeners=this.savedEventListeners.filter((e=>{let i=e.type,o=e.target||window;return"domReady"===t&&"DOMContentLoaded"!==i&&"readystatechange"!==i||("windowLoad"===t&&"load"!==i&&"readystatechange"!==i&&"pageshow"!==i||(this.B(i,o)&&(i="rocket-"+i),e.remove?o.removeEventListener(i,e.func,e.options):o.addEventListener(i,e.func,e.options),!1))}))}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,(()=>{e[t].forEach((t=>t()))}),{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout((()=>i.bind(document)(o))):i.bind(document)(o)}return t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise((t=>{this.userActionTriggered?t():this.onFirstUserAction=t}))}async L(){return new Promise((t=>{document.addEventListener("DOMContentLoaded",(()=>{this.realDomReadyFired=!0,t()}),{isRocket:!0})}))}async I(){return this.realWindowLoadedFired?Promise.resolve():new Promise((t=>{window.addEventListener("load",t,{isRocket:!0})}))}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver((t=>{for(const e of t)e.addedNodes.forEach((t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise((e=>{const i=()=>{const i=this.pendingScripts.findIndex((e=>e.script===t));i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)}))})}))})),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async j(){await this.J(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.j()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.N(t,"preconnect")}async $(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",(()=>{i.setAttribute("data-rocket-status","failed-network"),e()}),{isRocket:!0}),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.$(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())}),{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.$(e),this.C(t)):Promise.resolve()}O(){this.N([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}N(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach((t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}})),document.head.appendChild(o)}W(){this.trash.forEach((t=>t.remove()))}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async G(){Date.now()-this.lastBreath>45&&(await this.J(),this.lastBreath=Date.now())}async J(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+	
+		<title>PROGRAMA DE ACELERAÇÃO &#8211; Médico 2.0</title>
+<meta name='robots' content='max-image-preview:large'>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<script type="rocketlazyloadscript" data-rocket-type='application/javascript' id='pys-version-script'>console.log('PixelYourSite Free version 10.2.1');</script>
+<link rel='dns-prefetch' href='//www.googletagmanager.com'>
+
+<link rel="alternate" type="application/rss+xml" title="Feed para Médico 2.0 &raquo;" href="../feed/index-1.htm">
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Médico 2.0 &raquo;" href="../comments/feed/index-1.htm">
+<link data-minify="1" rel='stylesheet' id='hfe-widgets-style-css' href='../wp-content/cache/min/1/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1747137936' media='all'>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='table-addons-for-elementor-css' href='../wp-content/cache/min/1/wp-content/plugins/table-addons-for-elementor/public/css/table-addons-for-elementor-public.css?ver=1747137936' media='all'>
+<link data-minify="1" rel='stylesheet' id='hfe-style-css' href='../wp-content/cache/min/1/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1747137936' media='all'>
+<link rel='stylesheet' id='elementor-frontend-css' href='../wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1747137935' media='all'>
+<style id='elementor-frontend-inline-css'>
+@-webkit-keyframes ha_fadeIn{0%{opacity:0}to{opacity:1}}@keyframes ha_fadeIn{0%{opacity:0}to{opacity:1}}@-webkit-keyframes ha_zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@keyframes ha_zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@-webkit-keyframes ha_rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}to{opacity:1}}@keyframes ha_rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}to{opacity:1}}@-webkit-keyframes ha_bounce{0%,20%,53%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}40%,43%{-webkit-transform:translate3d(0,-30px,0) scaleY(1.1);transform:translate3d(0,-30px,0) scaleY(1.1);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}70%{-webkit-transform:translate3d(0,-15px,0) scaleY(1.05);transform:translate3d(0,-15px,0) scaleY(1.05);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}80%{-webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);transition-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translate3d(0,0,0) scaleY(.95);transform:translate3d(0,0,0) scaleY(.95)}90%{-webkit-transform:translate3d(0,-4px,0) scaleY(1.02);transform:translate3d(0,-4px,0) scaleY(1.02)}}@keyframes ha_bounce{0%,20%,53%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}40%,43%{-webkit-transform:translate3d(0,-30px,0) scaleY(1.1);transform:translate3d(0,-30px,0) scaleY(1.1);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}70%{-webkit-transform:translate3d(0,-15px,0) scaleY(1.05);transform:translate3d(0,-15px,0) scaleY(1.05);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}80%{-webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);transition-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translate3d(0,0,0) scaleY(.95);transform:translate3d(0,0,0) scaleY(.95)}90%{-webkit-transform:translate3d(0,-4px,0) scaleY(1.02);transform:translate3d(0,-4px,0) scaleY(1.02)}}@-webkit-keyframes ha_bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1}}@keyframes ha_bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1}}@-webkit-keyframes ha_flipInX{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}}@keyframes ha_flipInX{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}}@-webkit-keyframes ha_flipInY{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg)}}@keyframes ha_flipInY{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg)}}@-webkit-keyframes ha_swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}}@keyframes ha_swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}}@-webkit-keyframes ha_slideInDown{0%{visibility:visible;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@keyframes ha_slideInDown{0%{visibility:visible;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@-webkit-keyframes ha_slideInUp{0%{visibility:visible;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@keyframes ha_slideInUp{0%{visibility:visible;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@-webkit-keyframes ha_slideInLeft{0%{visibility:visible;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@keyframes ha_slideInLeft{0%{visibility:visible;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@-webkit-keyframes ha_slideInRight{0%{visibility:visible;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}@keyframes ha_slideInRight{0%{visibility:visible;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.ha_fadeIn{-webkit-animation-name:ha_fadeIn;animation-name:ha_fadeIn}.ha_zoomIn{-webkit-animation-name:ha_zoomIn;animation-name:ha_zoomIn}.ha_rollIn{-webkit-animation-name:ha_rollIn;animation-name:ha_rollIn}.ha_bounce{-webkit-transform-origin:center bottom;-ms-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-name:ha_bounce;animation-name:ha_bounce}.ha_bounceIn{-webkit-animation-name:ha_bounceIn;animation-name:ha_bounceIn;-webkit-animation-duration:.75s;-webkit-animation-duration:calc(var(--animate-duration)*.75);animation-duration:.75s;animation-duration:calc(var(--animate-duration)*.75)}.ha_flipInX,.ha_flipInY{-webkit-animation-name:ha_flipInX;animation-name:ha_flipInX;-webkit-backface-visibility:visible!important;backface-visibility:visible!important}.ha_flipInY{-webkit-animation-name:ha_flipInY;animation-name:ha_flipInY}.ha_swing{-webkit-transform-origin:top center;-ms-transform-origin:top center;transform-origin:top center;-webkit-animation-name:ha_swing;animation-name:ha_swing}.ha_slideInDown{-webkit-animation-name:ha_slideInDown;animation-name:ha_slideInDown}.ha_slideInUp{-webkit-animation-name:ha_slideInUp;animation-name:ha_slideInUp}.ha_slideInLeft{-webkit-animation-name:ha_slideInLeft;animation-name:ha_slideInLeft}.ha_slideInRight{-webkit-animation-name:ha_slideInRight;animation-name:ha_slideInRight}.ha-css-transform-yes{-webkit-transition-duration:var(--ha-tfx-transition-duration, .2s);transition-duration:var(--ha-tfx-transition-duration, .2s);-webkit-transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;-webkit-transform:translate(var(--ha-tfx-translate-x, 0),var(--ha-tfx-translate-y, 0)) scale(var(--ha-tfx-scale-x, 1),var(--ha-tfx-scale-y, 1)) skew(var(--ha-tfx-skew-x, 0),var(--ha-tfx-skew-y, 0)) rotateX(var(--ha-tfx-rotate-x, 0)) rotateY(var(--ha-tfx-rotate-y, 0)) rotateZ(var(--ha-tfx-rotate-z, 0));transform:translate(var(--ha-tfx-translate-x, 0),var(--ha-tfx-translate-y, 0)) scale(var(--ha-tfx-scale-x, 1),var(--ha-tfx-scale-y, 1)) skew(var(--ha-tfx-skew-x, 0),var(--ha-tfx-skew-y, 0)) rotateX(var(--ha-tfx-rotate-x, 0)) rotateY(var(--ha-tfx-rotate-y, 0)) rotateZ(var(--ha-tfx-rotate-z, 0))}.ha-css-transform-yes:hover{-webkit-transform:translate(var(--ha-tfx-translate-x-hover, var(--ha-tfx-translate-x, 0)),var(--ha-tfx-translate-y-hover, var(--ha-tfx-translate-y, 0))) scale(var(--ha-tfx-scale-x-hover, var(--ha-tfx-scale-x, 1)),var(--ha-tfx-scale-y-hover, var(--ha-tfx-scale-y, 1))) skew(var(--ha-tfx-skew-x-hover, var(--ha-tfx-skew-x, 0)),var(--ha-tfx-skew-y-hover, var(--ha-tfx-skew-y, 0))) rotateX(var(--ha-tfx-rotate-x-hover, var(--ha-tfx-rotate-x, 0))) rotateY(var(--ha-tfx-rotate-y-hover, var(--ha-tfx-rotate-y, 0))) rotateZ(var(--ha-tfx-rotate-z-hover, var(--ha-tfx-rotate-z, 0)));transform:translate(var(--ha-tfx-translate-x-hover, var(--ha-tfx-translate-x, 0)),var(--ha-tfx-translate-y-hover, var(--ha-tfx-translate-y, 0))) scale(var(--ha-tfx-scale-x-hover, var(--ha-tfx-scale-x, 1)),var(--ha-tfx-scale-y-hover, var(--ha-tfx-scale-y, 1))) skew(var(--ha-tfx-skew-x-hover, var(--ha-tfx-skew-x, 0)),var(--ha-tfx-skew-y-hover, var(--ha-tfx-skew-y, 0))) rotateX(var(--ha-tfx-rotate-x-hover, var(--ha-tfx-rotate-x, 0))) rotateY(var(--ha-tfx-rotate-y-hover, var(--ha-tfx-rotate-y, 0))) rotateZ(var(--ha-tfx-rotate-z-hover, var(--ha-tfx-rotate-z, 0)))}.happy-addon>.elementor-widget-container{word-wrap:break-word;overflow-wrap:break-word}.happy-addon>.elementor-widget-container,.happy-addon>.elementor-widget-container *{-webkit-box-sizing:border-box;box-sizing:border-box}.happy-addon p:empty{display:none}.happy-addon .elementor-inline-editing{min-height:auto!important}.happy-addon-pro img{max-width:100%;height:auto;-o-object-fit:cover;object-fit:cover}.ha-screen-reader-text{position:absolute;overflow:hidden;clip:rect(1px,1px,1px,1px);margin:-1px;padding:0;width:1px;height:1px;border:0;word-wrap:normal!important;-webkit-clip-path:inset(50%);clip-path:inset(50%)}.ha-has-bg-overlay>.elementor-widget-container{position:relative;z-index:1}.ha-has-bg-overlay>.elementor-widget-container:before{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;content:""}.ha-popup--is-enabled .ha-js-popup,.ha-popup--is-enabled .ha-js-popup img{cursor:-webkit-zoom-in!important;cursor:zoom-in!important}.mfp-wrap .mfp-arrow,.mfp-wrap .mfp-close{background-color:transparent}.mfp-wrap .mfp-arrow:focus,.mfp-wrap .mfp-close:focus{outline-width:thin}.ha-advanced-tooltip-enable{position:relative;cursor:pointer;--ha-tooltip-arrow-color:black;--ha-tooltip-arrow-distance:0}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content{position:absolute;z-index:999;display:none;padding:5px 0;width:120px;height:auto;border-radius:6px;background-color:#000;color:#fff;text-align:center;opacity:0}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content::after{position:absolute;border-width:5px;border-style:solid;content:""}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content.no-arrow::after{visibility:hidden}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content.show{display:inline-block;opacity:1}.ha-advanced-tooltip-enable.ha-advanced-tooltip-top .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-top .ha-advanced-tooltip-content{top:unset;right:0;bottom:calc(101% + var(--ha-tooltip-arrow-distance));left:0;margin:0 auto}.ha-advanced-tooltip-enable.ha-advanced-tooltip-top .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-top .ha-advanced-tooltip-content::after{top:100%;right:unset;bottom:unset;left:50%;border-color:var(--ha-tooltip-arrow-color) transparent transparent transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-bottom .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-bottom .ha-advanced-tooltip-content{top:calc(101% + var(--ha-tooltip-arrow-distance));right:0;bottom:unset;left:0;margin:0 auto}.ha-advanced-tooltip-enable.ha-advanced-tooltip-bottom .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-bottom .ha-advanced-tooltip-content::after{top:unset;right:unset;bottom:100%;left:50%;border-color:transparent transparent var(--ha-tooltip-arrow-color) transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-left .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-left .ha-advanced-tooltip-content{top:50%;right:calc(101% + var(--ha-tooltip-arrow-distance));bottom:unset;left:unset;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-left .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-left .ha-advanced-tooltip-content::after{top:50%;right:unset;bottom:unset;left:100%;border-color:transparent transparent transparent var(--ha-tooltip-arrow-color);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-right .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-right .ha-advanced-tooltip-content{top:50%;right:unset;bottom:unset;left:calc(101% + var(--ha-tooltip-arrow-distance));-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-right .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-right .ha-advanced-tooltip-content::after{top:50%;right:100%;bottom:unset;left:unset;border-color:transparent var(--ha-tooltip-arrow-color) transparent transparent;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-top .ha-advanced-tooltip-content{top:unset;right:0;bottom:calc(101% + var(--ha-tooltip-arrow-distance));left:0;margin:0 auto}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-top .ha-advanced-tooltip-content::after{top:100%;right:unset;bottom:unset;left:50%;border-color:var(--ha-tooltip-arrow-color) transparent transparent transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-bottom .ha-advanced-tooltip-content{top:calc(101% + var(--ha-tooltip-arrow-distance));right:0;bottom:unset;left:0;margin:0 auto}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-bottom .ha-advanced-tooltip-content::after{top:unset;right:unset;bottom:100%;left:50%;border-color:transparent transparent var(--ha-tooltip-arrow-color) transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-left .ha-advanced-tooltip-content{top:50%;right:calc(101% + var(--ha-tooltip-arrow-distance));bottom:unset;left:unset;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-left .ha-advanced-tooltip-content::after{top:50%;right:unset;bottom:unset;left:100%;border-color:transparent transparent transparent var(--ha-tooltip-arrow-color);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-right .ha-advanced-tooltip-content{top:50%;right:unset;bottom:unset;left:calc(101% + var(--ha-tooltip-arrow-distance));-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-right .ha-advanced-tooltip-content::after{top:50%;right:100%;bottom:unset;left:unset;border-color:transparent var(--ha-tooltip-arrow-color) transparent transparent;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body.elementor-editor-active .happy-addon.ha-gravityforms .gform_wrapper{display:block!important}.ha-scroll-to-top-wrap.ha-scroll-to-top-hide{display:none}.ha-scroll-to-top-wrap.edit-mode,.ha-scroll-to-top-wrap.single-page-off{display:none!important}.ha-scroll-to-top-button{position:fixed;right:15px;bottom:15px;z-index:9999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-ms-flex-align:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;width:50px;height:50px;border-radius:50px;background-color:#5636d1;color:#fff;text-align:center;opacity:1;cursor:pointer;-webkit-transition:all .3s;transition:all .3s}.ha-scroll-to-top-button i{color:#fff;font-size:16px}.ha-scroll-to-top-button:hover{background-color:#e2498a}
+</style>
+<link rel='stylesheet' id='elementor-post-6-css' href='../wp-content/uploads/elementor/css/post-6.css?ver=1747137935' media='all'>
+<link data-minify="1" rel='stylesheet' id='font-awesome-5-all-css' href='../wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=1747137936' media='all'>
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='../wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='widget-heading-css' href='../wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='widget-countdown-css' href='../wp-content/plugins/elementor-pro/assets/css/widget-countdown.min.css?ver=3.28.3' media='all'>
+<link rel='stylesheet' id='widget-image-css' href='../wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='e-animation-grow-css' href='../wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='e-animation-fadeInUp-css' href='../wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='e-animation-fadeInDown-css' href='../wp-content/plugins/elementor/assets/lib/animations/styles/fadeInDown.min.css?ver=3.28.4' media='all'>
+<link rel='stylesheet' id='widget-icon-list-css' href='../wp-content/uploads/elementor/css/custom-widget-icon-list.min.css?ver=1747137935' media='all'>
+<link rel='stylesheet' id='widget-accordion-css' href='../wp-content/uploads/elementor/css/custom-widget-accordion.min.css?ver=1747137935' media='all'>
+<link rel='stylesheet' id='elementor-post-12365-css' href='../wp-content/uploads/elementor/css/post-12365.css?ver=1747177778' media='all'>
+<link rel='stylesheet' id='hello-elementor-css' href='../wp-content/themes/hello-elementor/style.min.css?ver=3.4.1' media='all'>
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='../wp-content/themes/hello-elementor/theme.min.css?ver=3.4.1' media='all'>
+<link rel='stylesheet' id='hello-elementor-header-footer-css' href='../wp-content/themes/hello-elementor/header-footer.min.css?ver=3.4.1' media='all'>
+<link data-minify="1" rel='stylesheet' id='dashicons-css' href='../wp-content/cache/min/1/wp-includes/css/dashicons.min.css?ver=1747137936' media='all'>
+<link data-minify="1" rel='stylesheet' id='hfe-elementor-icons-css' href='../wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1747137936' media='all'>
+<link rel='stylesheet' id='hfe-icons-list-css' href='../wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3' media='all'>
+<link rel='stylesheet' id='hfe-social-icons-css' href='../wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0' media='all'>
+<link data-minify="1" rel='stylesheet' id='hfe-social-share-icons-brands-css' href='../wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=1747137936' media='all'>
+<link data-minify="1" rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href='../wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=1747137936' media='all'>
+<link data-minify="1" rel='stylesheet' id='hfe-nav-menu-icons-css' href='../wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=1747137936' media='all'>
+<link rel='stylesheet' id='hfe-widget-blockquote-css' href='../wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css?ver=3.25.0' media='all'>
+<link rel='stylesheet' id='hfe-mega-menu-css' href='../wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.26.2' media='all'>
+<link rel='stylesheet' id='hfe-nav-menu-widget-css' href='../wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.26.0' media='all'>
+<link rel='stylesheet' id='eael-general-css' href='../wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=6.1.12' media='all'>
+<link data-minify="1" rel='stylesheet' id='happy-icons-css' href='../wp-content/cache/min/1/wp-content/plugins/happy-elementor-addons/assets/fonts/style.min.css?ver=1747137936' media='all'>
+<link data-minify="1" rel='stylesheet' id='font-awesome-css' href='../wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=1747137936' media='all'>
+<style id='rocket-lazyload-inline-css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(../wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}.wp-embed-responsive .wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+</style>
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-roboto-css' href='../wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1747137936' media='all'>
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='../wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1747137937' media='all'>
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-gildadisplay-css' href='../wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/gildadisplay.css?ver=1747137937' media='all'>
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-poppins-css' href='../wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/poppins.css?ver=1747137937' media='all'>
+<link data-minify="1" rel='stylesheet' id='elementor-icons-shared-0-css' href='../wp-content/cache/min/1/wp-content/plugins/happy-elementor-addons/assets/fonts/style.min.css?ver=1747137936' media='all'>
+<link data-minify="1" rel='stylesheet' id='elementor-icons-happy-icons-css' href='../wp-content/cache/min/1/wp-content/plugins/happy-elementor-addons/assets/fonts/style.min.css?ver=1747137936' media='all'>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.28.4" id="font-awesome-4-shim-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="jquery-js-after">window.addEventListener('DOMContentLoaded', function() {
+!function($){"use strict";$(document).ready(function(){$(this).scrollTop()>100&&$(".hfe-scroll-to-top-wrap").removeClass("hfe-scroll-to-top-hide"),$(window).scroll(function(){$(this).scrollTop()<100?$(".hfe-scroll-to-top-wrap").fadeOut(300):$(".hfe-scroll-to-top-wrap").fadeIn(300)}),$(".hfe-scroll-to-top-wrap").on("click",function(){$("html, body").animate({scrollTop:0},300);return!1})})}(jQuery);
+});</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.8.1" id="jquery-bind-first-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3" id="js-cookie-pys-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/pixelyoursite/dist/scripts/tld.min.js?ver=2.3.1" id="js-tld-js" data-rocket-defer defer></script>
+<script id="pys-js-extra">
+var pysOptions = {"staticEvents":{"facebook":{"init_event":[{"delay":0,"type":"static","ajaxFire":false,"name":"PageView","pixelIds":["261376849071508"],"eventID":"08d58748-5417-4641-bedc-4fca5c79d9d0","params":{"page_title":"PROGRAMA DE ACELERA\u00c7\u00c3O","post_type":"page","post_id":12365,"plugin":"PixelYourSite","user_role":"guest","event_url":"lp.medico20.com.br\/programa-de-aceleracao\/"},"e_id":"init_event","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}]}},"dynamicEvents":[],"triggerEvents":[],"triggerEventTypes":[],"facebook":{"pixelIds":["261376849071508"],"advancedMatching":{"external_id":"ecccdccffebafbeedbfdfdfecdd"},"advancedMatchingEnabled":true,"removeMetadata":false,"contentParams":{"post_type":"page","post_id":12365,"content_name":"PROGRAMA DE ACELERA\u00c7\u00c3O"},"commentEventEnabled":true,"wooVariableAsSimple":false,"downloadEnabled":true,"formEventEnabled":true,"serverApiEnabled":true,"wooCRSendFromServer":false,"send_external_id":null,"enabled_medical":false,"do_not_track_medical_param":["event_url","post_title","page_title","landing_page","content_name","categories","category_name","tags"],"meta_ldu":false},"debug":"","siteUrl":"https:\/\/lp.medico20.com.br","ajaxUrl":"https:\/\/lp.medico20.com.br\/wp-admin\/admin-ajax.php","ajax_event":"c43744e548","enable_remove_download_url_param":"1","cookie_duration":"7","last_visit_duration":"60","enable_success_send_form":"","ajaxForServerEvent":"1","ajaxForServerStaticEvent":"1","send_external_id":"1","external_id_expire":"180","track_cookie_for_subdomains":"1","google_consent_mode":"1","gdpr":{"ajax_enabled":false,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"externalID_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_tiktok_consent_category":"marketing","cookiebot_google_ads_consent_category":null,"cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false,"analytics_storage":{"enabled":true,"value":"granted","filter":false},"ad_storage":{"enabled":true,"value":"granted","filter":false},"ad_user_data":{"enabled":true,"value":"granted","filter":false},"ad_personalization":{"enabled":true,"value":"granted","filter":false}},"cookie":{"disabled_all_cookie":false,"disabled_start_session_cookie":false,"disabled_advanced_form_data_cookie":false,"disabled_landing_page_cookie":false,"disabled_first_visit_cookie":false,"disabled_trafficsource_cookie":false,"disabled_utmTerms_cookie":false,"disabled_utmId_cookie":false},"tracking_analytics":{"TrafficSource":"direct","TrafficLanding":"undefined","TrafficUtms":[],"TrafficUtmsId":[]},"GATags":{"ga_datalayer_type":"default","ga_datalayer_name":"dataLayerPYS"},"woo":{"enabled":false},"edd":{"enabled":false},"cache_bypass":"1747177778"};
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://lp.medico20.com.br/wp-content/cache/min/1/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=1747093267" id="pys-js" data-rocket-defer defer></script>
+
+<!-- Snippet da etiqueta do Google (gtag.js) adicionado pelo Site Kit -->
+
+<!-- Snippet do Google Análises adicionado pelo Site Kit -->
+<script type="rocketlazyloadscript" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=GT-MQX6XQM" id="google_gtagjs-js" async></script>
+<script type="rocketlazyloadscript" id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["lp.medico20.com.br"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-MQX6XQM");
+</script>
+
+<!-- Fim do snippet da etiqueta do Google (gtag.js) adicionado pelo Site Kit -->
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/happy-elementor-addons/assets/vendor/dom-purify/purify.min.js?ver=3.1.6" id="dom-purify-js" data-rocket-defer defer></script>
+<link rel="https://api.w.org/" href="../wp-json/index-1.htm"><link rel="alternate" title="JSON" type="application/json" href="../wp-json/wp/v2/pages/12365"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc-1.php?rsd">
+<meta name="generator" content="WordPress 6.8.1">
+<link rel="canonical" href="index.htm">
+<link rel='shortlink' href='https://lp.medico20.com.br/?p=12365'>
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../wp-json/oembed/1.0/embed-2?url=https%3A%2F%2Flp.medico20.com.br%2Fprograma-de-aceleracao%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed-3?url=https%3A%2F%2Flp.medico20.com.br%2Fprograma-de-aceleracao%2F&#038;format=xml">
+<style id="essential-blocks-global-styles">
+            :root {
+                --eb-global-primary-color: #101828;
+--eb-global-secondary-color: #475467;
+--eb-global-tertiary-color: #98A2B3;
+--eb-global-text-color: #475467;
+--eb-global-heading-color: #1D2939;
+--eb-global-link-color: #444CE7;
+--eb-global-background-color: #F9FAFB;
+--eb-global-button-text-color: #FFFFFF;
+--eb-global-button-background-color: #101828;
+--eb-gradient-primary-color: linear-gradient(90deg, hsla(259, 84%, 78%, 1) 0%, hsla(206, 67%, 75%, 1) 100%);
+--eb-gradient-secondary-color: linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+--eb-gradient-tertiary-color: linear-gradient(90deg, hsla(248, 21%, 15%, 1) 0%, hsla(250, 14%, 61%, 1) 100%);
+--eb-gradient-background-color: linear-gradient(90deg, rgb(250, 250, 250) 0%, rgb(233, 233, 233) 49%, rgb(244, 243, 243) 100%);
+
+                --eb-tablet-breakpoint: 1024px;
+--eb-mobile-breakpoint: 767px;
+
+            }
+            
+            
+        </style><meta name="generator" content="Site Kit by Google 1.152.1"><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '261376849071508');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="../tr-4?id=261376849071508&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel Code -->
+<meta name="generator" content="Elementor 3.28.4; features: e_font_icon_svg, additional_custom_breakpoints, e_local_google_fonts, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<!-- Google tag (gtag.js) -->
+<script type="rocketlazyloadscript" async data-rocket-src="https://www.googletagmanager.com/gtag/js?id=AW-11362840609"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11362840609');
+</script>
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PQZDV75F');</script>
+<!-- End Google Tag Manager -->
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '522827807495876');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="../tr-5?id=522827807495876&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PWLCSM7P');</script>
+<!-- End Google Tag Manager -->
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="../wp-content/uploads/2023/09/Icone-da-Medico-2.0.png" sizes="32x32">
+<link rel="icon" href="../wp-content/uploads/2023/09/Icone-da-Medico-2.0.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../wp-content/uploads/2023/09/Icone-da-Medico-2.0.png">
+<meta name="msapplication-TileImage" content="https://lp.medico20.com.br/wp-content/uploads/2023/09/Icone-da-Medico-2.0.png">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '261376849071508');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="../tr-4?id=261376849071508&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M6DGR48T');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1620266775499222');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="../tr-6?id=1620266775499222&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel Code -->		<style id="wp-custom-css">
+			html, body {
+	overflow-x:hidden !important;
+}		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="generator" content="WP Rocket 3.18.3" data-wpr-features="wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_minify_css wpr_preload_links wpr_desktop"></head>
+<body class="wp-singular page-template page-template-elementor_canvas page page-id-12365 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor ehf-template-hello-elementor ehf-stylesheet-hello-elementor hello-elementor-default elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-12365">
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQZDV75F" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6DGR48T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->		<div data-elementor-type="wp-page" data-elementor-id="12365" class="elementor elementor-12365" data-elementor-settings="{&quot;ha_cmc_init_switcher&quot;:&quot;no&quot;}" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-63b0a63 e-flex e-con-boxed e-con e-parent" data-id="63b0a63" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="da3b654b339ed49f0234db69a353a170" class="e-con-inner">
+				<div class="elementor-element elementor-element-d657ce6 elementor-widget elementor-widget-heading" data-id="d657ce6" data-element_type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">AS INSCRIÇÕES FECHAM EM:</h3>				</div>
+				<div class="elementor-element elementor-element-80c2ca6 elementor-countdown--label-block elementor-widget elementor-widget-countdown" data-id="80c2ca6" data-element_type="widget" data-widget_type="countdown.default">
+							<div class="elementor-countdown-wrapper" data-date="1747709940">
+			<div class="elementor-countdown-item"><span class="elementor-countdown-digits elementor-countdown-days"></span> <span class="elementor-countdown-label">Dias</span></div><div class="elementor-countdown-item"><span class="elementor-countdown-digits elementor-countdown-hours"></span> <span class="elementor-countdown-label">Horas</span></div><div class="elementor-countdown-item"><span class="elementor-countdown-digits elementor-countdown-minutes"></span> <span class="elementor-countdown-label">Minutos</span></div><div class="elementor-countdown-item"><span class="elementor-countdown-digits elementor-countdown-seconds"></span> <span class="elementor-countdown-label">Segundos</span></div>		</div>
+						</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-572674b e-flex e-con-boxed e-con e-parent" data-id="572674b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="db09287dc3941bcac9abe956715ef14a" class="e-con-inner">
+				<div class="elementor-element elementor-element-21db602 elementor-widget elementor-widget-image" data-id="21db602" data-element_type="widget" data-widget_type="image.default">
+															<img fetchpriority="high" decoding="async" width="756" height="249" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20756%20249'%3E%3C/svg%3E" class="attachment-large size-large wp-image-12262" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/LOGO.png 756w, https://lp.medico20.com.br/wp-content/uploads/2025/05/LOGO-300x99.png 300w" data-lazy-sizes="(max-width: 756px) 100vw, 756px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/LOGO.png"><noscript><img fetchpriority="high" decoding="async" width="756" height="249" src="../wp-content/uploads/2025/05/LOGO.png" class="attachment-large size-large wp-image-12262" alt="" srcset="../wp-content/uploads/2025/05/LOGO.png 756w, ../wp-content/uploads/2025/05/LOGO-300x99.png 300w" sizes="(max-width: 756px) 100vw, 756px"></noscript>															</div>
+				<div class="elementor-element elementor-element-f539deb elementor-widget elementor-widget-heading" data-id="f539deb" data-element_type="widget" data-widget_type="heading.default">
+					<h1 class="elementor-heading-title elementor-size-default">ACOMPANHAMENTO PRÓXIMO E PERSONALIZADO PARA DOBRAR SUA RECEITA E ENTREGAR MAIOR SUCESSO TERAPÊUTICO PARA O PACIENTE</h1>				</div>
+				<div class="elementor-element elementor-element-8fc2e10 elementor-widget elementor-widget-text-editor" data-id="8fc2e10" data-element_type="widget" data-widget_type="text-editor.default">
+									<p><span style="font-weight: 400;">COM O OLHAR INDIVIDUALIZADO DO DR. JORGE MENENGUCI, VOCÊ VAI FATURAR MAIS SEM DEPENDER DA CAPTAÇÃO DE NOVOS AGENDAMENTOS E SEM ABRIR MAIS HORÁRIOS NA SUA AGENDA.</span></p>								</div>
+				<div class="elementor-element elementor-element-703b135 elementor-mobile-align-center bt_pulsar elementor-widescreen-align-center elementor-align-center elementor-widget elementor-widget-button" data-id="703b135" data-element_type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjEyNDI5IiwidG9nZ2xlIjpmYWxzZX0%3D">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">FAÇA SUA inscrição</span>
+					</span>
+					</a>
+								</div>
+				<div class="elementor-element elementor-element-0c9b70c elementor-invisible elementor-widget elementor-widget-heading" data-id="0c9b70c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">CONHEÇA O PROGRAMA<br> DE ACELERAÇÃO MED2X
+</h2>				</div>
+				<div class="elementor-element elementor-element-e116ec2 elementor-widget elementor-widget-image" data-id="e116ec2" data-element_type="widget" data-widget_type="image.default">
+															<img decoding="async" width="800" height="5" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%205'%3E%3C/svg%3E" class="attachment-large size-large wp-image-2725" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2024/02/linha-branca.png 850w, https://lp.medico20.com.br/wp-content/uploads/2024/02/linha-branca-300x2.png 300w, https://lp.medico20.com.br/wp-content/uploads/2024/02/linha-branca-768x5.png 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2024/02/linha-branca.png"><noscript><img decoding="async" width="800" height="5" src="../wp-content/uploads/2024/02/linha-branca.png" class="attachment-large size-large wp-image-2725" alt="" srcset="../wp-content/uploads/2024/02/linha-branca.png 850w, ../wp-content/uploads/2024/02/linha-branca-300x2.png 300w, ../wp-content/uploads/2024/02/linha-branca-768x5.png 768w" sizes="(max-width: 800px) 100vw, 800px"></noscript>															</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-d4718c6 e-flex e-con-boxed e-con e-parent" data-id="d4718c6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="7d0ce0601f4dee916c7ce6cc61b61694" class="e-con-inner">
+				<div class="elementor-element elementor-element-17133f7 elementor-widget elementor-widget-image" data-id="17133f7" data-element_type="widget" data-widget_type="image.default">
+															<img decoding="async" width="800" height="870" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20870'%3E%3C/svg%3E" class="attachment-large size-large wp-image-12230" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-34-942x1024.png 942w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-34-276x300.png 276w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-34-768x835.png 768w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-34.png 1024w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-34-942x1024.png"><noscript><img decoding="async" width="800" height="870" src="../wp-content/uploads/2025/05/Agrupar-34-942x1024.png" class="attachment-large size-large wp-image-12230" alt="" srcset="../wp-content/uploads/2025/05/Agrupar-34-942x1024.png 942w, ../wp-content/uploads/2025/05/Agrupar-34-276x300.png 276w, ../wp-content/uploads/2025/05/Agrupar-34-768x835.png 768w, ../wp-content/uploads/2025/05/Agrupar-34.png 1024w" sizes="(max-width: 800px) 100vw, 800px"></noscript>															</div>
+				<div class="elementor-element elementor-element-d9a7c43 elementor-invisible elementor-widget elementor-widget-image" data-id="d9a7c43" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_tablet&quot;:&quot;fadeInDown&quot;}" data-widget_type="image.default">
+															<img decoding="async" width="800" height="870" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20870'%3E%3C/svg%3E" class="attachment-large size-large wp-image-12229" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-35-942x1024.png 942w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-35-276x300.png 276w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-35-768x835.png 768w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-35.png 1024w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-35-942x1024.png"><noscript><img loading="lazy" decoding="async" width="800" height="870" src="../wp-content/uploads/2025/05/Agrupar-35-942x1024.png" class="attachment-large size-large wp-image-12229" alt="" srcset="../wp-content/uploads/2025/05/Agrupar-35-942x1024.png 942w, ../wp-content/uploads/2025/05/Agrupar-35-276x300.png 276w, ../wp-content/uploads/2025/05/Agrupar-35-768x835.png 768w, ../wp-content/uploads/2025/05/Agrupar-35.png 1024w" sizes="(max-width: 800px) 100vw, 800px"></noscript>															</div>
+				<div class="elementor-element elementor-element-4881ccb elementor-invisible elementor-widget elementor-widget-image" data-id="4881ccb" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_tablet&quot;:&quot;fadeInDown&quot;}" data-widget_type="image.default">
+															<img decoding="async" width="800" height="591" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20591'%3E%3C/svg%3E" class="attachment-large size-large wp-image-12228" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-36.png 1024w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-36-300x222.png 300w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-36-768x568.png 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-36.png"><noscript><img loading="lazy" decoding="async" width="800" height="591" src="../wp-content/uploads/2025/05/Agrupar-36.png" class="attachment-large size-large wp-image-12228" alt="" srcset="../wp-content/uploads/2025/05/Agrupar-36.png 1024w, ../wp-content/uploads/2025/05/Agrupar-36-300x222.png 300w, ../wp-content/uploads/2025/05/Agrupar-36-768x568.png 768w" sizes="(max-width: 800px) 100vw, 800px"></noscript>															</div>
+				<div class="elementor-element elementor-element-fbe3159 elementor-mobile-align-center bt_pulsar elementor-widescreen-align-center elementor-align-center elementor-widget elementor-widget-button" data-id="fbe3159" data-element_type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjEyNDI5IiwidG9nZ2xlIjpmYWxzZX0%3D">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">FAÇA SUA inscrição</span>
+					</span>
+					</a>
+								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-47ed75d e-flex e-con-boxed e-con e-parent" data-id="47ed75d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="456ea9f7c556a7611a63847305a63a95" class="e-con-inner">
+		<div class="elementor-element elementor-element-7ae3c1a e-flex e-con-boxed e-con e-child" data-id="7ae3c1a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="0b77f88eca57d1f1b60428c6e9049c86" class="e-con-inner">
+		<div class="elementor-element elementor-element-2847dac e-flex e-con-boxed e-con e-child" data-id="2847dac" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="2da2dcecf0cb11671c52d6fcd167dc91" class="e-con-inner">
+				<div class="elementor-element elementor-element-53c3e54 elementor-widget elementor-widget-image" data-id="53c3e54" data-element_type="widget" data-widget_type="image.default">
+															<img decoding="async" width="560" height="153" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20560%20153'%3E%3C/svg%3E" class="attachment-large size-large wp-image-12234" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-4-1.png 560w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-4-1-300x82.png 300w" data-lazy-sizes="(max-width: 560px) 100vw, 560px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-4-1.png"><noscript><img loading="lazy" decoding="async" width="560" height="153" src="../wp-content/uploads/2025/05/Agrupar-4-1.png" class="attachment-large size-large wp-image-12234" alt="" srcset="../wp-content/uploads/2025/05/Agrupar-4-1.png 560w, ../wp-content/uploads/2025/05/Agrupar-4-1-300x82.png 300w" sizes="(max-width: 560px) 100vw, 560px"></noscript>															</div>
+				<div class="elementor-element elementor-element-391ee5e elementor-widget elementor-widget-image" data-id="391ee5e" data-element_type="widget" data-widget_type="image.default">
+															<img decoding="async" width="560" height="153" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20560%20153'%3E%3C/svg%3E" class="attachment-large size-large wp-image-12235" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-5-2.png 560w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-5-2-300x82.png 300w" data-lazy-sizes="(max-width: 560px) 100vw, 560px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/Agrupar-5-2.png"><noscript><img loading="lazy" decoding="async" width="560" height="153" src="../wp-content/uploads/2025/05/Agrupar-5-2.png" class="attachment-large size-large wp-image-12235" alt="" srcset="../wp-content/uploads/2025/05/Agrupar-5-2.png 560w, ../wp-content/uploads/2025/05/Agrupar-5-2-300x82.png 300w" sizes="(max-width: 560px) 100vw, 560px"></noscript>															</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7d437df e-flex e-con-boxed e-con e-child" data-id="7d437df" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="e68eb4a7babfafd33aac842bcb41f395" class="e-con-inner">
+				<div class="elementor-element elementor-element-5e6c326 elementor-widget elementor-widget-heading" data-id="5e6c326" data-element_type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">UM CAMINHO SEGURO PARA DOBRAR SEU FATURAMENTO COM SEUS PACIENTES ATUAIS, SEM DEPENDER DE CAPTAÇÃO DE UM ÚNICO AGENDAMENTO A MAIS. 
+
+(E AINDA AUMENTAR A VALORIZAÇÃO DO SEU TRABALHO ENTREGANDO MAIOR SUCESSO TERAPÊUTICO.)</h3>				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4142b40 e-flex e-con-boxed e-con e-parent" data-id="4142b40" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="e7b497a4659d2bf8f0967afb574aed76" class="e-con-inner">
+		<div class="elementor-element elementor-element-8b9a04a e-flex e-con-boxed e-con e-child" data-id="8b9a04a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="0bb8abef3c1cf4f2f6dc378583b295e5" class="e-con-inner">
+				<div class="elementor-element elementor-element-9b5ab4b elementor-widget elementor-widget-heading" data-id="9b5ab4b" data-element_type="widget" data-widget_type="heading.default">
+					<h1 class="elementor-heading-title elementor-size-default">UM SISTEMA COMPROVADO PARA MÉDICOS QUE QUEREM PRATICAR UMA MEDICINA PARTICULAR DE EXCELÊNCIA, SEM DEPENDER DA CAPTAÇÃO CONSTANTE DE NOVOS PACIENTES</h1>				</div>
+				<div class="elementor-element elementor-element-19f3b0f elementor-widget elementor-widget-text-editor" data-id="19f3b0f" data-element_type="widget" data-widget_type="text-editor.default">
+									<p><b>Você pode ser o melhor médico do mundo, atender bem, orientar corretamente e se dedicar ao paciente&#8230; E ainda assim ver seu consultório estagnado.</b></p><p><span style="font-weight: 400;">O problema não é você.</span></p><p><span style="font-weight: 400;">É o </span><b>modelo tradicional de consultas pontuais</b><span style="font-weight: 400;"> que não favorece a continuidade, prejudica o seguimento, e limita drasticamente seu potencial de impacto clínico e financeiro.</span></p>								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-2123234 e-flex e-con-boxed e-con e-child" data-id="2123234" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="0d1d122c37e275cae87447b3c2a86443" class="e-con-inner">
+				<div class="elementor-element elementor-element-be17b7c elementor-widget elementor-widget-heading" data-id="be17b7c" data-element_type="widget" data-widget_type="heading.default">
+					<h1 class="elementor-heading-title elementor-size-default">SEUS PACIENTES NÃO VOLTAM AO CONSULTÓRIO NÃO PORQUE VOCÊ NÃO ATENDEU BEM, MAS PORQUE O MODELO ESTÁ ULTRAPASSADO:</h1>				</div>
+				<div class="elementor-element elementor-element-3fe37de elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="3fe37de" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Consultas avulsas que não criam comprometimento</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Pacientes que abandonam o tratamento antes do resultado ideal</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Faturamento que depende constantemente de novos agendamentos</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Sensação de "plantão de luxo" - você saiu do hospital, mas continua vivendo a mesma lógica: volume de pacientes, necessidade de atender cada vez mais para faturar mais, sem previsibilidade ou continuidade do cuidado.</span>
+									</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-511039b e-flex e-con-boxed e-con e-child" data-id="511039b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="c44a09835e2d07ed744c97ea2d59f472" class="e-con-inner">
+				<div class="elementor-element elementor-element-5852162 elementor-widget elementor-widget-heading" data-id="5852162" data-element_type="widget" data-widget_type="heading.default">
+					<h1 class="elementor-heading-title elementor-size-default">NO NOSSO MODELO, VOCÊ TRANSFORMA SUAS CONSULTAS AVULSAS EM PLANOS DE ACOMPANHAMENTO ESTRUTURADOS QUE:</h1>				</div>
+				<div class="elementor-element elementor-element-4974b68 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="4974b68" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Aumentam a adesão do paciente ao tratamento</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Garantem o seguimento adequado dos casos</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Criam previsibilidade financeira e clínica</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Dobram seu faturamento por paciente sem necessidade de captar novos pacientes constantemente</span>
+									</li>
+						</ul>
+						</div>
+				<div class="elementor-element elementor-element-452254f elementor-widget-laptop__width-initial elementor-widget elementor-widget-text-editor" data-id="452254f" data-element_type="widget" data-widget_type="text-editor.default">
+									<p><span style="font-weight: 400;">O Programa de Aceleração Med2x é onde você implementa esse modelo com o </span><b>acompanhamento próximo do Dr. Jorge Menenguci</b><span style="font-weight: 400;">, que desenhará junto com você cada detalhe do seu plano de acompanhamento.</span></p><p><b>Transformar seu modelo de consulta é o jeito mais rápido </b><span style="font-weight: 400;">de entregar mais valor ao paciente e ser justamente remunerado por isso.</span></p>								</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-733f24c elementor-mobile-align-center bt_pulsar elementor-widescreen-align-center elementor-align-center elementor-widget elementor-widget-button" data-id="733f24c" data-element_type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjEyNDI5IiwidG9nZ2xlIjpmYWxzZX0%3D">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">FAÇA SUA inscrição</span>
+					</span>
+					</a>
+								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-0e001e6 elementor-hidden-widescreen elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-hidden-mobile e-flex e-con-boxed e-con e-parent" data-id="0e001e6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="beefc7881725c1a79dd2e2f1c988dc0e" class="e-con-inner">
+		<div class="elementor-element elementor-element-cf43eff e-con-full e-flex e-con e-child" data-id="cf43eff" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-26d39f0 elementor-invisible elementor-widget elementor-widget-heading" data-id="26d39f0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">MUITOS MÉDICOS QUEREM RESGATAR A SATISFAÇÃO DE PRATICAR A VERDADEIRA MEDICINA, MAS POUCOS ESTÃO COMPROMETIDOS EM DAR O PRÓXIMO PASSO.</h2>				</div>
+				<div class="elementor-element elementor-element-7b498b6 elementor-widget-laptop__width-initial elementor-widget elementor-widget-text-editor" data-id="7b498b6" data-element_type="widget" data-widget_type="text-editor.default">
+									<p><span style="font-weight: 400;">É por isso que não basta querer fazer parte do Programa de Aceleração Med2x.</span></p><p><span style="font-weight: 400;">Para garantir que cada médico receba a atenção individualizada necessária, o Dr. Jorge conduzirá um processo seletivo cuidadoso, priorizando profissionais verdadeiramente comprometidos com a medicina de excelência e com seus pacientes.</span></p>								</div>
+				</div>
+		<div class="elementor-element elementor-element-20b1a1c e-con-full e-flex e-con e-child" data-id="20b1a1c" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-c07bd9b elementor-widget elementor-widget-accordion" data-id="c07bd9b" data-element_type="widget" data-widget_type="accordion.default">
+							<div class="elementor-accordion">
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-2011" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-2011" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-angle-up" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">APLICAÇÃO</a>
+					</div>
+					<div id="elementor-tab-content-2011" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-2011"><p><span style="font-weight: 400;">Ao preencher 100% da sua aplicação você estará no processo seletivo. Ela será analisada e, caso aprovada, você poderá agendar a entrevista online.</span></p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-2012" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-2012" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-angle-up" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">ENTREVISTA</a>
+					</div>
+					<div id="elementor-tab-content-2012" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-2012"><p><span style="font-weight: 400;">Ao ser aprovado na aplicação, você terá uma entrevista online (via Zoom) para garantir que você está apto e que o Programa de Aceleração MED2X é ideal para você.</span></p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-2013" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-2013" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-angle-up" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">SELEÇÃO</a>
+					</div>
+					<div id="elementor-tab-content-2013" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-2013"><p><span style="font-weight: 400;">Apenas médicos alinhados com os valores do nosso programa serão selecionados.</span></p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-2014" class="elementor-tab-title" data-tab="4" role="button" aria-controls="elementor-tab-content-2014" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-angle-up" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">MATRÍCULA</a>
+					</div>
+					<div id="elementor-tab-content-2014" class="elementor-tab-content elementor-clearfix" data-tab="4" role="region" aria-labelledby="elementor-tab-title-2014"><p><span style="font-weight: 400;">Após a aprovação, você receberá as instruções para realizar sua matrícula e confirmar sua vaga no nosso grupo.</span></p></div>
+				</div>
+								</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6df2556 e-flex e-con-boxed e-con e-parent" data-id="6df2556" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="78b6d3be1d9ded5faabcdf5861053621" class="e-con-inner">
+		<div class="elementor-element elementor-element-934f683 e-con-full e-flex e-con e-child" data-id="934f683" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-1cd59a4 elementor-widget elementor-widget-heading" data-id="1cd59a4" data-element_type="widget" data-widget_type="heading.default">
+					<h1 class="elementor-heading-title elementor-size-default">O PROGRAMA DE ACELERAÇÃO<br> MED2X É CAPAZ DE:
+</h1>				</div>
+				<div class="elementor-element elementor-element-a4898bf elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a4898bf" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Transformar seu modelo de consulta em um sistema de planos de acompanhamento contínuo.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Dobrar seu faturamento por paciente sem aumentar sua carga horária.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Criar previsibilidade financeira mesmo em semanas sem pacientes novos.</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-7b67aa7 e-con-full e-flex e-con e-child" data-id="7b67aa7" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-b5a0c2e elementor-widget elementor-widget-heading" data-id="b5a0c2e" data-element_type="widget" data-widget_type="heading.default">
+					<h1 class="elementor-heading-title elementor-size-default">E A PARTIR DISSO, VOCÊ VAI:</h1>				</div>
+				<div class="elementor-element elementor-element-685fa44 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="685fa44" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Faturar o dobro sem precisar trabalhar mais horas.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Ter seus pacientes voltando ao consultório sempre, gerando recorrência e previsibilidade.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Ter independência de complementar renda com convênios e plantões.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Ter independência de captar pacientes todos os dias para manter seu consultório funcionando.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Praticar uma medicina que realmente transforma vidas, com resultados clínicos superiores e duradouros.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Ter a satisfação profissional renovada ao praticar uma medicina focada no cuidado contínuo.</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-ff69c51 elementor-mobile-align-center bt_pulsar elementor-widescreen-align-center elementor-align-center elementor-widget elementor-widget-button" data-id="ff69c51" data-element_type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjEyNDI5IiwidG9nZ2xlIjpmYWxzZX0%3D">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">FAÇA SUA INSCRIÇÃO</span>
+					</span>
+					</a>
+								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6624398 e-flex e-con-boxed e-con e-parent" data-id="6624398" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="e9a2ee8f3aec9509594305290a06c332" class="e-con-inner">
+				<div class="elementor-element elementor-element-cc1228d elementor-widget elementor-widget-heading" data-id="cc1228d" data-element_type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">COMO FUNCIONA O PROGRAMA DE ACELERAÇÃO MED2X?
+</h3>				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4e7e908 e-flex e-con-boxed e-con e-parent" data-id="4e7e908" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div data-rocket-location-hash="59cc51dd4ed28913aafa875afe178604" class="e-con-inner">
+		<div class="elementor-element elementor-element-a6e60b7 e-con-full e-flex e-con e-child" data-id="a6e60b7" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+		<div class="elementor-element elementor-element-a92acc7 e-con-full e-flex e-con e-child" data-id="a92acc7" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-8745375 elementor-widget elementor-widget-image" data-id="8745375" data-element_type="widget" data-widget_type="image.default">
+															<img decoding="async" width="1284" height="851" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201284%20851'%3E%3C/svg%3E" class="attachment-full size-full wp-image-12349" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/Sao-6-meses-de-acompanhamento.jpg 1284w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Sao-6-meses-de-acompanhamento-300x199.jpg 300w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Sao-6-meses-de-acompanhamento-1024x679.jpg 1024w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Sao-6-meses-de-acompanhamento-768x509.jpg 768w" data-lazy-sizes="(max-width: 1284px) 100vw, 1284px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/Sao-6-meses-de-acompanhamento.jpg"><noscript><img loading="lazy" decoding="async" width="1284" height="851" src="../wp-content/uploads/2025/05/Sao-6-meses-de-acompanhamento.jpg" class="attachment-full size-full wp-image-12349" alt="" srcset="../wp-content/uploads/2025/05/Sao-6-meses-de-acompanhamento.jpg 1284w, ../wp-content/uploads/2025/05/Sao-6-meses-de-acompanhamento-300x199.jpg 300w, ../wp-content/uploads/2025/05/Sao-6-meses-de-acompanhamento-1024x679.jpg 1024w, ../wp-content/uploads/2025/05/Sao-6-meses-de-acompanhamento-768x509.jpg 768w" sizes="(max-width: 1284px) 100vw, 1284px"></noscript>															</div>
+				</div>
+		<div class="elementor-element elementor-element-858aa29 e-con-full e-flex e-con e-child" data-id="858aa29" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-10bebfa elementor-invisible elementor-widget elementor-widget-heading" data-id="10bebfa" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">São 6 meses de acompanhamento próximo para você executar da forma mais simples possível.</h3>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-56c48e9 e-con-full e-flex e-con e-child" data-id="56c48e9" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+		<div class="elementor-element elementor-element-349649c e-con-full e-flex e-con e-child" data-id="349649c" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-8279e9f elementor-hidden-widescreen elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-widget elementor-widget-image" data-id="8279e9f" data-element_type="widget" data-widget_type="image.default">
+															<img decoding="async" width="1284" height="851" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201284%20851'%3E%3C/svg%3E" class="attachment-full size-full wp-image-12350" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais.jpg 1284w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais-300x199.jpg 300w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais-1024x679.jpg 1024w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais-768x509.jpg 768w" data-lazy-sizes="(max-width: 1284px) 100vw, 1284px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais.jpg"><noscript><img loading="lazy" decoding="async" width="1284" height="851" src="../wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais.jpg" class="attachment-full size-full wp-image-12350" alt="" srcset="../wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais.jpg 1284w, ../wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais-300x199.jpg 300w, ../wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais-1024x679.jpg 1024w, ../wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais-768x509.jpg 768w" sizes="(max-width: 1284px) 100vw, 1284px"></noscript>															</div>
+				<div class="elementor-element elementor-element-2666fdd elementor-invisible elementor-widget elementor-widget-heading" data-id="2666fdd" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Teremos reuniões em grupo e individuais para:</h3>				</div>
+				<div class="elementor-element elementor-element-9b90da1 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="9b90da1" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">O Dr Jorge desenhar o seu plano de acompanhamento com você.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Te mostrar como apresentar sem se comportar como um vendedor.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Otimizar e ajustar a rota quando você oferecer para os primeiros pacientes.</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-02c7f37 e-con-full e-flex e-con e-child" data-id="02c7f37" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-2b7f754 elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="2b7f754" data-element_type="widget" data-widget_type="image.default">
+															<img decoding="async" width="1284" height="851" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201284%20851'%3E%3C/svg%3E" class="attachment-full size-full wp-image-12350" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais.jpg 1284w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais-300x199.jpg 300w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais-1024x679.jpg 1024w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais-768x509.jpg 768w" data-lazy-sizes="(max-width: 1284px) 100vw, 1284px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais.jpg"><noscript><img loading="lazy" decoding="async" width="1284" height="851" src="../wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais.jpg" class="attachment-full size-full wp-image-12350" alt="" srcset="../wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais.jpg 1284w, ../wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais-300x199.jpg 300w, ../wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais-1024x679.jpg 1024w, ../wp-content/uploads/2025/05/Teremos-reunioes-em-grupo-e-individuais-768x509.jpg 768w" sizes="(max-width: 1284px) 100vw, 1284px"></noscript>															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-368b0b2 e-con-full e-flex e-con e-child" data-id="368b0b2" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+		<div class="elementor-element elementor-element-cbbd1bd e-con-full e-flex e-con e-child" data-id="cbbd1bd" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-ced8b30 elementor-widget elementor-widget-image" data-id="ced8b30" data-element_type="widget" data-widget_type="image.default">
+															<img decoding="async" width="1284" height="851" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201284%20851'%3E%3C/svg%3E" class="attachment-full size-full wp-image-12347" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/Grupos-de-acompanhamento-suporte-e-networking-no-WhatsApp_.jpg 1284w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Grupos-de-acompanhamento-suporte-e-networking-no-WhatsApp_-300x199.jpg 300w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Grupos-de-acompanhamento-suporte-e-networking-no-WhatsApp_-1024x679.jpg 1024w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Grupos-de-acompanhamento-suporte-e-networking-no-WhatsApp_-768x509.jpg 768w" data-lazy-sizes="(max-width: 1284px) 100vw, 1284px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/Grupos-de-acompanhamento-suporte-e-networking-no-WhatsApp_.jpg"><noscript><img loading="lazy" decoding="async" width="1284" height="851" src="../wp-content/uploads/2025/05/Grupos-de-acompanhamento-suporte-e-networking-no-WhatsApp_.jpg" class="attachment-full size-full wp-image-12347" alt="" srcset="../wp-content/uploads/2025/05/Grupos-de-acompanhamento-suporte-e-networking-no-WhatsApp_.jpg 1284w, ../wp-content/uploads/2025/05/Grupos-de-acompanhamento-suporte-e-networking-no-WhatsApp_-300x199.jpg 300w, ../wp-content/uploads/2025/05/Grupos-de-acompanhamento-suporte-e-networking-no-WhatsApp_-1024x679.jpg 1024w, ../wp-content/uploads/2025/05/Grupos-de-acompanhamento-suporte-e-networking-no-WhatsApp_-768x509.jpg 768w" sizes="(max-width: 1284px) 100vw, 1284px"></noscript>															</div>
+				</div>
+		<div class="elementor-element elementor-element-9335946 e-con-full e-flex e-con e-child" data-id="9335946" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-9256306 elementor-invisible elementor-widget elementor-widget-heading" data-id="9256306" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Grupo individual de suporte com acesso direto ao Dr Jorge e sua equipe.</h3>				</div>
+				<div class="elementor-element elementor-element-8542b36 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="8542b36" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Grupo coletivo de networking.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Grupo individual de suporte comigo e com a minha equipe com acesso direto a nós.</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-74f3a56 e-con-full e-flex e-con e-child" data-id="74f3a56" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+		<div class="elementor-element elementor-element-46bd0df e-con-full e-flex e-con e-child" data-id="46bd0df" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-7968084 elementor-hidden-widescreen elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-widget elementor-widget-image" data-id="7968084" data-element_type="widget" data-widget_type="image.default">
+															<img decoding="async" width="1284" height="851" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201284%20851'%3E%3C/svg%3E" class="attachment-full size-full wp-image-12348" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360°_.jpg 1284w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360°_-300x199.jpg 300w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360°_-1024x679.jpg 1024w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360°_-768x509.jpg 768w" data-lazy-sizes="(max-width: 1284px) 100vw, 1284px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360°_.jpg"><noscript><img loading="lazy" decoding="async" width="1284" height="851" src="../wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360%C2%B0_.jpg" class="attachment-full size-full wp-image-12348" alt="" srcset="../wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360%C2%B0_.jpg 1284w, ../wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360%C2%B0_-300x199.jpg 300w, ../wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360%C2%B0_-1024x679.jpg 1024w, ../wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360%C2%B0_-768x509.jpg 768w" sizes="(max-width: 1284px) 100vw, 1284px"></noscript>															</div>
+				<div class="elementor-element elementor-element-85bee73 elementor-invisible elementor-widget elementor-widget-heading" data-id="85bee73" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Metodologia completa da Medicina 360°:</h3>				</div>
+				<div class="elementor-element elementor-element-75216a2 elementor-widget elementor-widget-text-editor" data-id="75216a2" data-element_type="widget" data-widget_type="text-editor.default">
+									<p><span style="font-weight: 400;">Por meio das reuniões individuais, coletivas e da trilha gravada de conteúdo, você terá uma metodologia completa para ter:</span></p>								</div>
+				<div class="elementor-element elementor-element-c1b9660 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c1b9660" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Um plano de acompanhamento que os seus pacientes vão adorar.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Um preço justo para você e para o paciente, que reflete o valor que você entrega.</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Um modelo de comunicação e apresentação de alta conversão.</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-e53a1f1 e-con-full e-flex e-con e-child" data-id="e53a1f1" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-5d4c199 elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="5d4c199" data-element_type="widget" data-widget_type="image.default">
+															<img decoding="async" width="1284" height="851" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201284%20851'%3E%3C/svg%3E" class="attachment-full size-full wp-image-12348" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360°_.jpg 1284w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360°_-300x199.jpg 300w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360°_-1024x679.jpg 1024w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360°_-768x509.jpg 768w" data-lazy-sizes="(max-width: 1284px) 100vw, 1284px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360°_.jpg"><noscript><img loading="lazy" decoding="async" width="1284" height="851" src="../wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360%C2%B0_.jpg" class="attachment-full size-full wp-image-12348" alt="" srcset="../wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360%C2%B0_.jpg 1284w, ../wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360%C2%B0_-300x199.jpg 300w, ../wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360%C2%B0_-1024x679.jpg 1024w, ../wp-content/uploads/2025/05/Metodologia-completa-da-Medicina-360%C2%B0_-768x509.jpg 768w" sizes="(max-width: 1284px) 100vw, 1284px"></noscript>															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a6fc2ef e-con-full e-flex e-con e-child" data-id="a6fc2ef" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+		<div class="elementor-element elementor-element-70431cc e-con-full e-flex e-con e-child" data-id="70431cc" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-c9bc6c3 elementor-widget elementor-widget-image" data-id="c9bc6c3" data-element_type="widget" data-widget_type="image.default">
+															<img decoding="async" width="1284" height="851" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201284%20851'%3E%3C/svg%3E" class="attachment-full size-full wp-image-12346" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/Estrutura-de-aceleracao-de-resultados_.jpg 1284w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Estrutura-de-aceleracao-de-resultados_-300x199.jpg 300w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Estrutura-de-aceleracao-de-resultados_-1024x679.jpg 1024w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Estrutura-de-aceleracao-de-resultados_-768x509.jpg 768w" data-lazy-sizes="(max-width: 1284px) 100vw, 1284px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/Estrutura-de-aceleracao-de-resultados_.jpg"><noscript><img loading="lazy" decoding="async" width="1284" height="851" src="../wp-content/uploads/2025/05/Estrutura-de-aceleracao-de-resultados_.jpg" class="attachment-full size-full wp-image-12346" alt="" srcset="../wp-content/uploads/2025/05/Estrutura-de-aceleracao-de-resultados_.jpg 1284w, ../wp-content/uploads/2025/05/Estrutura-de-aceleracao-de-resultados_-300x199.jpg 300w, ../wp-content/uploads/2025/05/Estrutura-de-aceleracao-de-resultados_-1024x679.jpg 1024w, ../wp-content/uploads/2025/05/Estrutura-de-aceleracao-de-resultados_-768x509.jpg 768w" sizes="(max-width: 1284px) 100vw, 1284px"></noscript>															</div>
+				</div>
+		<div class="elementor-element elementor-element-4a330be e-con-full e-flex e-con e-child" data-id="4a330be" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-e3f516c elementor-invisible elementor-widget elementor-widget-heading" data-id="e3f516c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Estrutura de aceleração de resultados:</h3>				</div>
+				<div class="elementor-element elementor-element-2198831 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="2198831" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">O seu plano será completamente adaptado para sua especialidade, seja ela clínica ou cirúrgica</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-far-check-circle" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Você vai receber scripts de comunicação testados e validados por médicos que não são vistos como vendedores.</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-d1fcd26 elementor-invisible elementor-widget elementor-widget-heading" data-id="d1fcd26" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Com este programa de aceleração, você saberá exatamente o que fazer, como fazer e quando fazer para crescer seu consultório sem depender do marketing.
+
+Sem se preocupar com a pressão de atrair novos agendamentos todos os dias.
+
+Anos de tentativa e erro serão condensados em apenas 6 meses.
+</h3>				</div>
+				<div class="elementor-element elementor-element-44da9a1 elementor-mobile-align-center bt_pulsar elementor-widescreen-align-center elementor-align-center elementor-widget elementor-widget-button" data-id="44da9a1" data-element_type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjEyNDI5IiwidG9nZ2xlIjpmYWxzZX0%3D">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">FAÇA SUA inscrição</span>
+					</span>
+					</a>
+								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-5638ec5 e-flex e-con-boxed e-con e-parent" data-id="5638ec5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-a0abb7c elementor-view-default elementor-widget elementor-widget-icon" data-id="a0abb7c" data-element_type="widget" data-widget_type="icon.default">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="hm hm-arrow-down"></i>			</div>
+		</div>
+						</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-2c04bca e-flex e-con-boxed e-con e-parent" data-id="2c04bca" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-357a347 e-con-full e-flex e-con e-child" data-id="357a347" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-e552da4 elementor-widget elementor-widget-image" data-id="e552da4" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
+															<img decoding="async" width="702" height="972" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20702%20972'%3E%3C/svg%3E" class="attachment-large size-large wp-image-12214" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/Sem-Titulo-1-1.png 702w, https://lp.medico20.com.br/wp-content/uploads/2025/05/Sem-Titulo-1-1-217x300.png 217w" data-lazy-sizes="(max-width: 702px) 100vw, 702px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/Sem-Titulo-1-1.png"><noscript><img loading="lazy" decoding="async" width="702" height="972" src="../wp-content/uploads/2025/05/Sem-Titulo-1-1.png" class="attachment-large size-large wp-image-12214" alt="" srcset="../wp-content/uploads/2025/05/Sem-Titulo-1-1.png 702w, ../wp-content/uploads/2025/05/Sem-Titulo-1-1-217x300.png 217w" sizes="(max-width: 702px) 100vw, 702px"></noscript>															</div>
+				</div>
+		<div class="elementor-element elementor-element-1fdc740 e-con-full e-flex e-con e-child" data-id="1fdc740" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-4165fb9 elementor-invisible elementor-widget elementor-widget-heading" data-id="4165fb9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Muito prazer,
+Eu me chamo
+</h2>				</div>
+				<div class="elementor-element elementor-element-18609d7 elementor-invisible elementor-widget elementor-widget-heading" data-id="18609d7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Jorge Menenguci.
+</h2>				</div>
+				<div class="elementor-element elementor-element-3d2dc5d elementor-widget elementor-widget-text-editor" data-id="3d2dc5d" data-element_type="widget" data-widget_type="text-editor.default">
+									<p><span style="font-weight: 400;">Sou nefrologista em Governador Valadares e por anos, tive a sensação de que estava atendendo, mas não conseguia cuidar como deveria. O paciente ia embora… e o processo acabava ali.</span></p><p><span style="font-weight: 400;">Foi quando descobri que o problema não era meu — era o modelo de consulta pontual, mal estruturado, que não favorece continuidade.</span></p><p><span style="font-weight: 400;">Ao aplicar a lógica da Medicina 360°, consegui transformar meu atendimento: tive maior comprometimento por parte do paciente, maior adesão ao plano, maior impacto clínico — e sim, maior retorno financeiro também.</span></p><p><span style="font-weight: 400;">Hoje, compartilho esse caminho com médicos que querem viver da medicina com ética, profundidade e tranquilidade, entregando uma metodologia pronta que traz resultados concretos.</span></p>								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-2e484c2 e-flex e-con-boxed e-con e-parent" data-id="2e484c2" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-d6d7da0 elementor-widget elementor-widget-heading" data-id="d6d7da0" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+					<h1 class="elementor-heading-title elementor-size-default">FAQs</h1>				</div>
+				<div class="elementor-element elementor-element-a0ce14c elementor-widget elementor-widget-accordion" data-id="a0ce14c" data-element_type="widget" data-widget_type="accordion.default">
+							<div class="elementor-accordion">
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-1681" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-1681" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">O QUE ENCONTRO NO PROGRAMA DE ACELERAÇÃO MED2X?</a>
+					</div>
+					<div id="elementor-tab-content-1681" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1681"><p>O Dr Jorge vai te acompanhar individualmente na implementação do modelo de consulta da Medicina 360° no seu consultório, permitindo que você dobre seu faturamento por paciente.</p><p>Para isso, vocês terão encontros individuais estratégicos, mentorias semanais em grupo e você poderá contar com o suporte direto dele através do grupo exclusivo de WhatsApp.</p><p>Com este olhar próximo, você vai superar qualquer obstáculo.</p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-1682" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-1682" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">O PROGRAMA É EXCLUSIVO PARA MÉDICOS?</a>
+					</div>
+					<div id="elementor-tab-content-1682" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-1682"><p><span style="font-weight: 400;">Sim, o Programa de Aceleração MED2X foi desenvolvido especificamente para médicos de todas as especialidades. Tanto médicos com consultório já estabelecido quanto aqueles que estão fazendo seus primeiros atendimentos particulares podem implementar a Medicina 360°, pois o modelo é adaptável a diferentes realidades.</span></p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-1683" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-1683" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">QUAL A DURAÇÃO DO PROGRAMA DE ACELERAÇÃO MED2X?</a>
+					</div>
+					<div id="elementor-tab-content-1683" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-1683"><p><span style="font-weight: 400;">O programa tem duração de 6 meses.</span></p></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-1684" class="elementor-tab-title" data-tab="4" role="button" aria-controls="elementor-tab-content-1684" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-left" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-angle-right" viewbox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-angle-down" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">AS AULAS SÃO GRAVADAS OU AO VIVO?</a>
+					</div>
+					<div id="elementor-tab-content-1684" class="elementor-tab-content elementor-clearfix" data-tab="4" role="region" aria-labelledby="elementor-tab-title-1684"><p><span style="font-weight: 400;">Os membros têm a implementação gravada passo a passo, gravada e ao vivo.</span></p><p><span style="font-weight: 400;">Caso você não possa participar de alguma sessão, todas são disponibilizadas para que você possa assistir quando for mais conveniente.</span></p></div>
+				</div>
+								</div>
+						</div>
+				<div class="elementor-element elementor-element-a2c3106 elementor-mobile-align-center bt_pulsar elementor-widescreen-align-center elementor-align-center elementor-widget elementor-widget-button" data-id="a2c3106" data-element_type="widget" data-widget_type="button.default">
+										<a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjEyNDI5IiwidG9nZ2xlIjpmYWxzZX0%3D">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">FAÇA SUA inscrição</span>
+					</span>
+					</a>
+								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-f27a364 e-flex e-con-boxed e-con e-parent" data-id="f27a364" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-f1fbe61 elementor-widget elementor-widget-text-editor" data-id="f1fbe61" data-element_type="widget" data-widget_type="text-editor.default">
+									<p>Copyright © 2025 MÉDICO 2.0 | <span style="color: #0000ff;"><a style="color: #0000ff;" href="https://lp.medico20.com.br/privacy-policy/">Todos os Direitos Reservados</a></span></p>								</div>
+				<div class="elementor-element elementor-element-f028b9e elementor-widget elementor-widget-text-editor" data-id="f028b9e" data-element_type="widget" data-widget_type="text-editor.default">
+									<p><span style="font-weight: 400;">Este site de nenhuma maneira é afiliado do Facebook ou qualquer entidade, ou empresa do Facebook.</span></p>								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-23bbcbf e-flex e-con-boxed e-con e-parent" data-id="23bbcbf" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+					</div>
+				</div>
+				</div>
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/hello-elementor\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="rocketlazyloadscript">
+(function() {
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+     if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function(item) {
+               if (item.href.indexOf('https://sun.eduzz.com') !== -1) {
+                    if (item.href.indexOf('?') === -1) {
+                         item.href += '?' + utmParamQueryString.toString();
+                    } else {
+                         item.href += '&' + utmParamQueryString.toString();
+                    }
+               }
+          });
+     }
+})();
+</script>
+
+<script type="rocketlazyloadscript">
+    (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+    vgo('setAccount', '800812681');
+    vgo('setTrackByDefault', true);
+
+    vgo('process');
+</script>
+		<div data-elementor-type="popup" data-elementor-id="12429" class="elementor elementor-12429 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;fadeInDown&quot;,&quot;exit_animation&quot;:&quot;fadeInDown&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;1&quot;,&quot;sizes&quot;:[]},&quot;avoid_multiple_popups&quot;:&quot;yes&quot;,&quot;ha_cmc_init_switcher&quot;:&quot;no&quot;,&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-184ae1bc e-flex e-con-boxed e-con e-parent" data-id="184ae1bc" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-af5642b elementor-widget elementor-widget-image" data-id="af5642b" data-element_type="widget" data-widget_type="image.default">
+															<img width="756" height="249" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20756%20249'%3E%3C/svg%3E" class="attachment-large size-large wp-image-12262" alt="" data-lazy-srcset="https://lp.medico20.com.br/wp-content/uploads/2025/05/LOGO.png 756w, https://lp.medico20.com.br/wp-content/uploads/2025/05/LOGO-300x99.png 300w" data-lazy-sizes="(max-width: 756px) 100vw, 756px" data-lazy-src="https://lp.medico20.com.br/wp-content/uploads/2025/05/LOGO.png"><noscript><img width="756" height="249" src="../wp-content/uploads/2025/05/LOGO.png" class="attachment-large size-large wp-image-12262" alt="" srcset="../wp-content/uploads/2025/05/LOGO.png 756w, ../wp-content/uploads/2025/05/LOGO-300x99.png 300w" sizes="(max-width: 756px) 100vw, 756px"></noscript>															</div>
+				<div class="elementor-element elementor-element-0f178b2 elementor-button-align-center elementor-widget elementor-widget-form" data-id="0f178b2" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Pr\u00f3ximo&quot;,&quot;step_previous_label&quot;:&quot;Anterior&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+							<form class="elementor-form" method="post" name="Novo formulário">
+			<input type="hidden" name="post_id" value="12429">
+			<input type="hidden" name="form_id" value="0f178b2">
+			<input type="hidden" name="referer_title" value="PROGRAMA DE ACELERAÇÃO">
+
+							<input type="hidden" name="queried_id" value="12365">
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-">
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required">
+												<label for="form-field-name" class="elementor-field-label elementor-screen-only">
+								Nome							</label>
+														<input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Nome" required="required">
+											</div>
+								<div class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_501979e elementor-col-100 elementor-field-required">
+												<label for="form-field-field_501979e" class="elementor-field-label elementor-screen-only">
+								WhatsApp							</label>
+								<input size="1" type="tel" name="form_fields[field_501979e]" id="form-field-field_501979e" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Seu WhatsApp com DDD" required="required" pattern="[0-9()#&amp;+*-=.]+" title="Apenas números e caracteres de telefone (#, -, *, etc.) são aceitos.">
+
+						</div>
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label elementor-screen-only">
+								E-mail							</label>
+														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Seu melhor e-mail" required="required">
+											</div>
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_c54d84d elementor-col-100 elementor-field-required">
+												<label for="form-field-field_c54d84d" class="elementor-field-label elementor-screen-only">
+								CRM							</label>
+														<input size="1" type="text" name="form_fields[field_c54d84d]" id="form-field-field_c54d84d" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Seu CRM" required="required">
+											</div>
+								<div class="elementor-field-type-hidden elementor-field-group elementor-column elementor-field-group-utm_campaign elementor-col-100">
+													<input size="1" type="hidden" name="form_fields[utm_campaign]" id="form-field-utm_campaign" class="elementor-field elementor-size-sm  elementor-field-textual">
+											</div>
+								<div class="elementor-field-type-hidden elementor-field-group elementor-column elementor-field-group-utm_source elementor-col-100">
+													<input size="1" type="hidden" name="form_fields[utm_source]" id="form-field-utm_source" class="elementor-field elementor-size-sm  elementor-field-textual">
+											</div>
+								<div class="elementor-field-type-hidden elementor-field-group elementor-column elementor-field-group-utm_medium elementor-col-100">
+													<input size="1" type="hidden" name="form_fields[utm_medium]" id="form-field-utm_medium" class="elementor-field elementor-size-sm  elementor-field-textual">
+											</div>
+								<div class="elementor-field-type-hidden elementor-field-group elementor-column elementor-field-group-utm_content elementor-col-100">
+													<input size="1" type="hidden" name="form_fields[utm_content]" id="form-field-utm_content" class="elementor-field elementor-size-sm  elementor-field-textual">
+											</div>
+								<div class="elementor-field-type-hidden elementor-field-group elementor-column elementor-field-group-utm_term elementor-col-100">
+													<input size="1" type="hidden" name="form_fields[utm_term]" id="form-field-utm_term" class="elementor-field elementor-size-sm  elementor-field-textual">
+											</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+					<button class="elementor-button elementor-size-sm elementor-animation-grow" type="submit">
+						<span class="elementor-button-content-wrapper">
+																						<span class="elementor-button-text">FINALIZE SEU CADASTRO</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+						</div>
+					</div>
+				</div>
+				</div>
+					<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+				;
+				(function($, w) {
+					'use strict';
+					let $window = $(w);
+
+					$(document).ready(function() {
+
+						let isEnable = "";
+						let isEnableLazyMove = "";
+						let speed = isEnableLazyMove ? '0.7' : '0.2';
+
+						if( !isEnable ) {
+							return;
+						}
+
+						if (typeof haCursor == 'undefined' || haCursor == null) {
+							initiateHaCursorObject(speed);
+						}
+
+						setTimeout(function() {
+							let targetCursor = $('.ha-cursor');
+							if (targetCursor) {
+								if (!isEnable) {
+									$('body').removeClass('hm-init-default-cursor-none');
+									$('.ha-cursor').addClass('ha-init-hide');
+								} else {
+									$('body').addClass('hm-init-default-cursor-none');
+									$('.ha-cursor').removeClass('ha-init-hide');
+								}
+							}
+						}, 500);
+
+					});
+
+				}(jQuery, window));
+			});</script>
+		
+					<script type="rocketlazyloadscript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<noscript><img height="1" width="1" style="display: none;" src="../tr-7?id=261376849071508&ev=PageView&noscript=1&cd%5Bpage_title%5D=PROGRAMA+DE+ACELERA%C3%87%C3%83O&cd%5Bpost_type%5D=page&cd%5Bpost_id%5D=12365&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=lp.medico20.com.br%2Fprograma-de-aceleracao%2F" alt=""></noscript>
+
+<script type="rocketlazyloadscript">
+    (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+    vgo('setAccount', '800812681');
+    vgo('setTrackByDefault', true);
+
+    vgo('process');
+</script>
+<link rel='stylesheet' id='elementor-post-12429-css' href='../wp-content/uploads/elementor/css/post-12429.css?ver=1747160596' media='all'>
+<link rel='stylesheet' id='widget-form-css' href='../wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=3.28.3' media='all'>
+<link rel='stylesheet' id='e-popup-css' href='../wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.28.3' media='all'>
+<script id="essential-blocks-blocks-localize-js-extra">
+var eb_conditional_localize = [];
+var EssentialBlocksLocalize = {"eb_plugins_url":"https:\/\/lp.medico20.com.br\/wp-content\/plugins\/essential-blocks\/","image_url":"https:\/\/lp.medico20.com.br\/wp-content\/plugins\/essential-blocks\/assets\/images","eb_wp_version":"6.8","eb_version":"5.4.0","eb_admin_url":"https:\/\/lp.medico20.com.br\/wp-admin\/","rest_rootURL":"https:\/\/lp.medico20.com.br\/wp-json\/","ajax_url":"https:\/\/lp.medico20.com.br\/wp-admin\/admin-ajax.php","nft_nonce":"f655aa1682","post_grid_pagination_nonce":"726dfa2779","placeholder_image":"https:\/\/lp.medico20.com.br\/wp-content\/plugins\/essential-blocks\/assets\/images\/placeholder.png","is_pro_active":"false","upgrade_pro_url":"https:\/\/essential-blocks.com\/upgrade","responsiveBreakpoints":{"tablet":1024,"mobile":767}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/essential-blocks/assets/js/eb-blocks-localize.js?ver=31d6cfe0d16ae931b73c" id="essential-blocks-blocks-localize-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/lp.medico20.com.br","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.4.1" id="hello-theme-frontend-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/happy-elementor-addons/assets/js/extension-reading-progress-bar.min.js?ver=3.16.4" id="happy-reading-progress-bar-js" data-rocket-defer defer></script>
+<script id="eael-general-js-extra">
+var localize = {"ajaxurl":"https:\/\/lp.medico20.com.br\/wp-admin\/admin-ajax.php","nonce":"521de5bd7e","i18n":{"added":"Adicionado ","compare":"Comparar","loading":"Carregando..."},"eael_translate_text":{"required_text":"\u00e9 um campo obrigat\u00f3rio","invalid_text":"Inv\u00e1lido","billing_text":"Faturamento","shipping_text":"Envio","fg_mfp_counter_text":"de"},"page_permalink":"https:\/\/lp.medico20.com.br\/programa-de-aceleracao\/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":true}}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.1.12" id="eael-general-js" data-rocket-defer defer></script>
+<script id="happy-elementor-addons-js-extra">
+var HappyLocalize = {"ajax_url":"https:\/\/lp.medico20.com.br\/wp-admin\/admin-ajax.php","nonce":"fc28f3a47c","pdf_js_lib":"https:\/\/lp.medico20.com.br\/wp-content\/plugins\/happy-elementor-addons\/assets\/vendor\/pdfjs\/lib"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/happy-elementor-addons/assets/js/happy-addons.min.js?ver=3.16.4" id="happy-elementor-addons-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/wp-rocket/assets/js/heartbeat.js?ver=3.18.3" id="heartbeat-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.28.3" id="elementor-pro-webpack-runtime-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.28.4" id="elementor-webpack-runtime-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.28.4" id="elementor-frontend-modules-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="rocketlazyloadscript" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/lp.medico20.com.br\/wp-admin\/admin-ajax.php","nonce":"5ac799e90e","urls":{"assets":"https:\/\/lp.medico20.com.br\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/lp.medico20.com.br\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/lp.medico20.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.28.3" id="elementor-pro-frontend-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":true}},"hasCustomBreakpoints":true},"version":"3.28.4","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"e_local_google_fonts":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"nested-elements":true,"editor_v2":true,"e_element_cache":true,"home_screen":true,"mega-menu":true},"urls":{"assets":"https:\/\/lp.medico20.com.br\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/lp.medico20.com.br\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/lp.medico20.com.br\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"8c0c549b8d"},"swiperClass":"swiper","settings":{"page":{"ha_cmc_init_switcher":"no"},"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet","viewport_laptop","viewport_widescreen"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_footer_logo_type":"logo","ha_rpb_enable":"no"},"post":{"id":12365,"title":"PROGRAMA%20DE%20ACELERA%C3%87%C3%83O%20%E2%80%93%20M%C3%A9dico%202.0","excerpt":"","featuredImage":false}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.28.4" id="elementor-frontend-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://lp.medico20.com.br/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.3" id="pro-elements-handlers-js" data-rocket-defer defer></script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWLCSM7P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script type="rocketlazyloadscript">
+    (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");
+    vgo('setAccount', '800812681');
+    vgo('setTrackByDefault', true);
+
+    vgo('process');
+</script><script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="../wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="Play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>	<script>var rocket_beacon_data = {"ajax_url":"https:\/\/lp.medico20.com.br\/wp-admin\/admin-ajax.php","nonce":"43104e57f9","url":"https:\/\/lp.medico20.com.br\/programa-de-aceleracao","is_mobile":false,"width_threshold":1600,"height_threshold":700,"delay":500,"debug":null,"status":{"atf":true,"lrc":true},"elements":"img, video, picture, p, main, div, li, svg, section, header, span","lrc_threshold":1800}</script><script data-name="wpr-wpr-beacon" src='../wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js' async></script><script>(()=>{class RocketElementorPreload{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}t(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this.i(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach((t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this.o(t)}catch(t){}}))}o(t){const e=JSON.parse(t.dataset.settings),i=e.m||e.animation_delay||0,n=e[this.animationSettingKeys.find((t=>e[t]))];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let o=setTimeout((()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this.l(t,e)}),i);window.addEventListener("rocket-startLoading",(function(){clearTimeout(o)}))}i(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach((t=>{e.forEach((e=>{i.push(t+e)}))})),i}l(t,e){this.i().forEach((t=>delete e[t])),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorPreload;requestAnimationFrame(t.t.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorPreload.run)})();</script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1747177779 -->
